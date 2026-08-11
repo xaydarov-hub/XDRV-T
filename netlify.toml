@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/send-telegram"
+  to = "/.netlify/functions/send-telegram"
+  status = 200

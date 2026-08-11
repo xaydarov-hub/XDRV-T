@@ -1,0 +1,64 @@
+.xdrv-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.xdrv-logo__mark {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.xdrv-logo__glyph {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.xdrv-logo__ring {
+  position: absolute;
+  inset: -1px;
+  border-radius: 12px;
+  border: 1px solid var(--color-accent);
+  pointer-events: none;
+}
+
+.xdrv-logo__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.xdrv-logo__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+}
+
+.xdrv-logo__sub {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--color-text-faint);
+}
+
+.xdrv-logo--lg .xdrv-logo__mark {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+}
+
+.xdrv-logo--lg .xdrv-logo__glyph {
+  width: 28px;
+  height: 28px;
+}

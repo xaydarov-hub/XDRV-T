@@ -1,0 +1,72 @@
+.xdrv-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 17px 24px;
+  border-radius: var(--radius-full);
+  border: 1px solid transparent;
+  font-size: 15.5px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: transform 0.2s var(--ease-premium), background-color 0.2s var(--ease-premium),
+    border-color 0.2s var(--ease-premium), opacity 0.2s var(--ease-premium);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.xdrv-btn:active {
+  transform: scale(0.98);
+}
+
+.xdrv-btn--primary {
+  background: var(--color-accent);
+  color: #0a0d02;
+}
+
+.xdrv-btn--primary:hover {
+  background: #d4ff62;
+}
+
+.xdrv-btn--secondary {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-border-strong);
+}
+
+.xdrv-btn--secondary:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.xdrv-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.xdrv-btn.is-loading .xdrv-btn__label {
+  opacity: 0.7;
+}
+
+.xdrv-btn__spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid rgba(10, 13, 2, 0.35);
+  border-top-color: #0a0d02;
+  animation: xdrv-spin 0.7s linear infinite;
+}
+
+.xdrv-btn--secondary .xdrv-btn__spinner {
+  border: 2px solid rgba(245, 245, 240, 0.25);
+  border-top-color: var(--color-text);
+}
+
+@keyframes xdrv-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
