@@ -200,3 +200,4 @@ netlify/functions/
 - [x] `.env` GitHub'ga chiqmaydi (`.gitignore`)
 - [x] Bot token frontend bundle'ga chiqmaydi (serverless function orqali)
 # XDRV-T
+# XDRV-T
